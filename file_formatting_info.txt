@@ -1,0 +1,19 @@
+How to read the input file "games_catalogue.tsv" and the outputfile
+
+The first line of the file contains the number of board games in the society's
+board game catalogue. The second line includes the column names, formatted as outlined below:
+
+game    num_players best_players	duration_mins	play_count	soc_rating	num_ratings	internet_rating	category
+
+Each line after represents an entry in the society's board games catalogue for a unique
+board game. The format is outline below, with each bar representing a tab:
+
+board game name | number/range of numbers of players that can play the game | the ideal number/range of number of players to play the game | time taken to play the game in minutes | number of times the game has been played by the society | society's average rating of the game (from 1 to 10, 10 being amazing) | number of times the game has been rated by a society member | the game's rating according to BoardGameGeek (from 1 to 10, 10 being amazing) | single word category tags, all in lower case and each separated by a single space
+
+All entries must be fully populated as outlined above. For any unknown values, simply enter 0.
+
+For ranges of values (as is valid for number of players and number of ideal players), use a
+hyphen between the numbers such that it is formatted as "minimum-maximum". For multiple
+discrete number of players (as is valid for number of ideal players), use a slash between
+the numbers such that it is formatted as "num1/num2".
+
